@@ -35,10 +35,20 @@ header > nav {
 }
 
 header > nav > a {
+  text-decoration: none;
   color: white;
   font-size: 1.2em;
-  text-decoration: none;
-  margin: 15px;
+  margin-right: 30px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid hsla(0, 0%, 100%, 0.3);
+}
+
+header > nav > a:hover {
+  border-radius: 5px;
+  font-size: 1.2em;
+  border: 1px solid hsla(0, 100%, 100%);
+  transition: border 0.2s ease-in;
 }
 
 section {
@@ -75,6 +85,7 @@ section#corpo-conteudo img {
 
 section#corpo-biografia > p {
   font-family: Helvetica, sans-serif;
+  font-weight: lighter;
   font-size: 1.3em;
   text-align: justify;
   text-indent: 1.5em;

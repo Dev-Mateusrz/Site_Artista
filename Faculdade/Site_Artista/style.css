@@ -8,7 +8,6 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
   background-image: url(imagens/fundo.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -70,8 +69,9 @@ main {
 }
 
 section {
+  display: block;
   background-color: rgb(255, 255, 255);
-  margin: auto;
+  margin-left: auto;
   max-width: 1000px;
   padding-left: 20px;
   padding-right: 20px;
@@ -84,6 +84,19 @@ section > h1 {
   padding: 25px;
   margin-bottom: -25px;
 }
+
+section#perfil {
+  background-color: rgba(255, 255, 255, 0);
+  position: relative;
+  bottom: 150px;
+  right: 800px;
+}
+
+section#perfil img {
+  width: 700px;
+  border-radius: 10px;
+}
+
 .sub-conteudo {
   font-variant: small-caps;
   font-size: 1.8em;
@@ -92,13 +105,23 @@ section > h1 {
   padding-bottom: 20px;
 }
 section#corpo-conteudo {
+  color: white;
   text-align: center;
+  background-color: rgba(255, 255, 255, 0);
+  position: relative;
+  bottom: -510px;
+  right: 940px;
 }
 
 section#corpo-conteudo img {
   margin-top: -20px;
   padding-left: 10px;
   width: 30px;
+}
+
+section#corpo-biografia {
+  margin-top: -38%;
+  padding-top: 35px;
 }
 
 section#corpo-biografia > p {
